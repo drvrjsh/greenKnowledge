@@ -5,16 +5,20 @@
     <meta name="viewport" content="width=device-width">
     <title>Hackathon Project</title>
     <link href="https://replit.com/@drvrajesh/hackathonproj#templates/index.css" rel="stylesheet" type="text/css" />
-
+    
+    <!-- Script to calculate score and redirect to the links page -->
     <script>
     function displayScore() {
+      //Get participation data
       var earthHour = document.forms["data"]["hourParticipation"].value;
       var charity = document.forms["data"]["charityIncentives"].value;
       var rooftop = document.forms["data"]["rooftopGardens"].value;
       var solar = document.forms["data"]["solarPanels"].value;
-
+      
+      //Set score to 0
       var score = 0
-
+      
+      //Calculate score based on user input
       if (earthHour == "yes") {
         score ++;
       }
@@ -27,7 +31,8 @@
       if (solar == "yes") {
         score ++;
       }
-
+      
+      //Create new page with data related to score
       document.write("<h2> Your GreenScore is " + (score/4)*100 + "% </h2>");
 
       if (score == 4) {
@@ -48,7 +53,8 @@
     <h1> GreenKnowledge </h1>
 
     <p> First, take the survey below to get your GreenScore. You will then be redirected to a page where we will give you useful links related to your GreenScore. </p>
-
+  
+    <!-- Form to get user input -->
     <form id="data" onsubmit="return displayScore()">
       <b> Environmental Participation </b> <br>
       Have you participated in Earth Hour? <input type="text" name="hourParticipation"><br>
