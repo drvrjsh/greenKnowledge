@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -30,17 +29,14 @@
       }
 
       document.write("<head><link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css' integrity='sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l' crossorigin='anonymous'></head>")
-      document.write("<h2> Your GreenScore is " + (score/4)*100 + "% </h2>");
+      document.write("<br> <h2 class='container'> Your GreenScore is " + (score/4)*100 + "% </h2>");
 
       if (score == 4) {
-        document.write("<p> Congratulations! You have surpassed environmental awareness standards. Check out the links below to learn more on what you can do to maintain this score, and test yourself in other unique ways! </p>");
-        document.write("<a href='https://www.carbonfootprint.com/calculator.aspx'> Calculate your carbon footprint! </a> <br>");
-        document.write("<a href='https://learn.eartheasy.com/guides/green-giving-guide-charity-that-makes-a-difference-to-the-planet/'> Participate in some more charities! </a>");
+        document.write("<p class='container'> Congratulations! You have surpassed environmental awareness standards. Check out the links below to learn more on what you can do to maintain this score, and test yourself in other unique ways! </p>");
+        document.write("<div class='list-group'> <center><a href='https://www.carbonfootprint.com/calculator.aspx' class='list-group-item list-group-item-action'>Calculate your carbon footprint!</a></center> <center><a href='https://learn.eartheasy.com/guides/green-giving-guide-charity-that-makes-a-difference-to-the-planet/' class='list-group-item list-group-item-action'>Participate in some more charities!</a></center></div>");
       } else {
-        document.write("<p> You're close to finish line! Check out the links below to learn what you can do to improve this score and become more aware of the environment. </p>");
-        document.write("<a href='https://www.carbonfootprint.com/calculator.aspx'> Calculate your carbon footprint! </a> <br>");
-        document.write("<a href='https://news.climate.columbia.edu/2018/12/27/35-ways-reduce-carbon-footprint'> Reduce your carbon footprint! </a> <br>");
-        document.write("<a href='https://learn.eartheasy.com/guides/green-giving-guide-charity-that-makes-a-difference-to-the-planet/'> Participate in some more charities! </a>");
+        document.write("<p class='container'> You're close to finish line! Check out the links below to learn what you can do to improve this score and become more aware of the environment. </p>");
+        document.write("<div class='list-group'> <center><a href='https://www.carbonfootprint.com/calculator.aspx' class='list-group-item list-group-item-action'>Calculate your carbon footprint!</a></center> <center><a href='https://news.climate.columbia.edu/2018/12/27/35-ways-reduce-carbon-footprint' class='list-group-item list-group-item-action'>Reduce your carbon footprint!</a></center> <center><a href='https://learn.eartheasy.com/guides/green-giving-guide-charity-that-makes-a-difference-to-the-planet/' class='list-group-item list-group-item-action'>Participate in some charities!</a></center></div>");
       }
 
     }
